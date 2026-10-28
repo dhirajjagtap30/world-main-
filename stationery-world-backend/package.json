@@ -1,0 +1,24 @@
+{
+  "name": "stationery-world-backend",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Real backend for the Stationery World customer ordering portal — implements the exact contract in BACKEND_API.md so the existing React frontend works with zero code changes once VITE_USE_MOCK_API=false.",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js",
+    "seed": "node src/seed.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "lowdb": "^7.0.1",
+    "morgan": "^1.10.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
